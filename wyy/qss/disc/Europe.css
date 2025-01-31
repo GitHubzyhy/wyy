@@ -1,0 +1,57 @@
+/*----------------------------------Europe----------------------------------*/
+QWidget#DiscF {
+    border-image: url(:/NewMusic/images/NewMusic/DiscT.png);
+}
+
+QWidget#Disc0 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis13.png);
+}
+
+QWidget#Disc1 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis14.png);
+}
+
+QWidget#Disc2 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis15.png);
+}
+
+QWidget#Disc3 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis16.png);
+}
+
+QWidget#Disc4 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis17.png);
+}
+
+QWidget#Disc5 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis18.png);
+}
+
+QWidget#Disc6 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis19.png);
+}
+
+QWidget#Disc7 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis20.png);
+}
+
+QWidget#Disc01,
+QWidget#Disc02,
+QWidget#Disc03,
+QWidget#Disc04 {
+    background: rgb(255, 255, 255);
+}
+
+QLabel#labName01,
+QLabel#labName02,
+QLabel#labName03,
+QLabel#labName04 {
+    color: rgb(55, 55, 55);
+}
+
+QLabel#labDiscAu01,
+QLabel#labDiscAu02,
+QLabel#labDiscAu03,
+QLabel#labDiscAu04 {
+    color: rgb(159, 159, 159);
+}

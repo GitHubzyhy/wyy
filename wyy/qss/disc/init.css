@@ -1,0 +1,62 @@
+/*----------------------------------初始化数据----------------------------------*/
+QWidget#NewDisc {
+    background: transparent;
+    border-radius: 8px;
+}
+
+QWidget#DiscF {
+    border-image: url(:/NewMusic/images/NewMusic/DiscF.png);
+}
+
+QWidget#Disc0 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis01.png);
+}
+
+QWidget#Disc1 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis02.png);
+}
+
+QWidget#Disc2 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis03.png);
+}
+
+QWidget#Disc3 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis04.png);
+}
+
+QWidget#Disc4 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis05.png);
+}
+
+QWidget#Disc5 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis06.png);
+}
+
+QWidget#Disc6 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis07.png);
+}
+
+QWidget#Disc7 {
+    border-image: url(:/NewMusic/images/NewMusic/Dis08.png);
+}
+
+QWidget#Disc01,
+QWidget#Disc02,
+QWidget#Disc03,
+QWidget#Disc04 {
+    background: rgb(255, 255, 255);
+}
+
+QLabel#labName01,
+QLabel#labName02,
+QLabel#labName03,
+QLabel#labName04 {
+    color: rgb(55, 55, 55);
+}
+
+QLabel#labDiscAu01,
+QLabel#labDiscAu02,
+QLabel#labDiscAu03,
+QLabel#labDiscAu04 {
+    color: rgb(159, 159, 159);
+}

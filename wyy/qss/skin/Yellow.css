@@ -1,0 +1,42 @@
+QWidget#title_Widget {
+	background-color: rgb(249, 238, 90);
+}
+
+QLabel#label_title_logo {
+	border-image: url(:/title/images/title/wyyYellow.png);
+}
+
+QWidget#widgetSearch {
+	background: rgb(238, 227, 86);
+	border-radius: 10px;
+}
+
+QLineEdit#line_Search {
+	background: rgb(238, 227, 86);
+	border-radius: 10px;
+	/*padding: 0px 0px 0px 30px;*/
+	font-size: 14;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#pushButton_vip {
+	border-image: url(:/title/images/title/vipYellow.png);
+}
+
+QPushButton#pushButton_title_left {
+	background-color: rgb(238, 227, 86);
+	border-radius: 10px;
+}
+
+QPushButton#pushButton_title_right {
+	background-color: rgb(238, 227, 86);
+	border-radius: 10px;
+}
+
+QLabel#label_message_Tip {
+	color: rgb(249, 238, 90);
+	background-color: rgb(255, 255, 255);
+	border-radius: 7px;
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageForm</class>
+ <widget class="QWidget" name="MessageForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>365</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background: white;
+    border: 0px;
+    border-radius: 1px;
+}
+
+/*包裹按钮的背景*/
+QWidget#widGroupBut {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 15px;
+}
+
+QPushButton {
+    color: rgb(55, 55, 55);
+    background: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 14px;
+}
+
+QPushButton:hover {
+    background: rgb(244, 244, 244);
+    border: 0px;
+    border-radius: 14px;
+}
+
+QPushButton:checked {
+    color: rgb(255, 255, 255);
+    background: rgb(187, 187, 187);
+    border: 0px;
+    border-radius: 14px;
+}
+
+QListWidget {
+    border: 1px;
+    background: white;
+    border-radius: 5px;
+}
+
+QListWidget::Item {
+    background: white;
+    height: 60px;
+}
+
+QListWidget::Item:hover {
+    background: rgb(246, 246, 247);
+}
+QLabel#labMess
+{
+	color: rgb(0, 0, 0);
+}
+
+QPushButton#btnRead{
+    color: rgb(80, 125, 175);
+}
+
+
+QPushButton#btnRead:hover{
+ 	border-radius: 8px;
+}
+
+QPushButton#btnRead:pressed{
+	background: rgb(253, 245, 245);
+    color: rgb(236, 65, 65);
+ 	border-radius: 8px;
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="labMess">
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>消息</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>218</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnRead">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>一键已读</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QListWidget" name="listMessage">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>361</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="verticalScrollMode">
+    <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widGroupBut" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>342</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="ptnPer">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>私信</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ptnComment">
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>1</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>评论</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ptnMe">
+    <property name="geometry">
+     <rect>
+      <x>171</x>
+      <y>1</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>@我</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ptnInform">
+    <property name="geometry">
+     <rect>
+      <x>256</x>
+      <y>1</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>通知</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
